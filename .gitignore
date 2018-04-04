@@ -1,0 +1,16 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+
+build/
+backup/
+.vscode/
+libs/ThrowProxy.sol
+logs/
+libs/
+test-sample-backup/
+migrations-backup/
+contracts/ReleasableToken.sol
+contracts/BaseContracts/SDAVault.sol
+node_modules/
+contract-backup/
+migrations/
+npm-debug.log.4000106553

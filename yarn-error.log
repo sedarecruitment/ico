@@ -1,0 +1,121 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add truffle-hdwallet-provider
+
+PATH: 
+  C:\Users\sultan\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\sultan\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Docker Toolbox;C:\Users\sultan\AppData\Roaming\npm;C:\Users\sultan\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.11.1
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "pre-ico-smart-contract",
+    "version": "1.0.0",
+    "description": "Smart contract for Pre-ICO",
+    "main": "truffle.js",
+    "directories": {
+      "test": "test"
+    },
+    "dependencies": {
+      "npm": "^5.6.0",
+      "zeppelin-solidity": "^1.7.0"
+    },
+    "devDependencies": {
+      "babel-polyfill": "^6.26.0",
+      "babel-preset-env": "^1.6.1",
+      "babel-preset-es2015": "^6.24.1",
+      "babel-preset-stage-2": "^6.24.1",
+      "babel-preset-stage-3": "^6.17.0",
+      "babel-register": "^6.23.0",
+      "chai": "^4.1.2",
+      "chai-as-promised": "^7.1.1",
+      "chai-bignumber": "^2.0.2",
+      "truffle-hdwallet-provider": "0.0.3",
+      "web3": "^1.0.0-beta.27"
+    },
+    "scripts": {
+      "test": "mocha"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+ssh://git@bitbucket.org/accredixico/pre-ico-smart-contract.git"
+    },
+    "author": "Accredix",
+    "license": "ISC",
+    "homepage": "https://bitbucket.org/accredixico/pre-ico-smart-contract#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: C:\Users\sultan\Desktop\sda\ico-contract\node_modules\sha3: Command failed.
+  Exit code: 1
+  Command: C:\Windows\system32\cmd.exe
+  Arguments: /d /s /c node-gyp rebuild
+  Directory: C:\Users\sultan\Desktop\sda\ico-contract\node_modules\sha3
+  Output:
+  C:\Users\sultan\Desktop\sda\ico-contract\node_modules\sha3>if not defined npm_config_node_gyp (node "C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin\\..\..\node_modules\node-gyp\bin\node-gyp.js" rebuild )  else (node "" rebuild ) 
+  gyp info it worked if it ends with ok
+  gyp info using node-gyp@3.6.2
+  gyp info using node@8.11.1 | win32 | x64
+  gyp info spawn C:\Python27\python.exe
+  gyp info spawn args [ 'C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\gyp\\gyp_main.py',
+  gyp info spawn args   'binding.gyp',
+  gyp info spawn args   '-f',
+  gyp info spawn args   'msvs',
+  gyp info spawn args   '-G',
+  gyp info spawn args   'msvs_version=2015',
+  gyp info spawn args   '-I',
+  gyp info spawn args   'C:\\Users\\sultan\\Desktop\\sda\\ico-contract\\node_modules\\sha3\\build\\config.gypi',
+  gyp info spawn args   '-I',
+  gyp info spawn args   'C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\addon.gypi',
+  gyp info spawn args   '-I',
+  gyp info spawn args   'C:\\Users\\sultan\\.node-gyp\\8.11.1\\include\\node\\common.gypi',
+  gyp info spawn args   '-Dlibrary=shared_library',
+  gyp info spawn args   '-Dvisibility=default',
+  gyp info spawn args   '-Dnode_root_dir=C:\\Users\\sultan\\.node-gyp\\8.11.1',
+  gyp info spawn args   '-Dnode_gyp_dir=C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp',
+  gyp info spawn args   '-Dnode_lib_file=C:\\Users\\sultan\\.node-gyp\\8.11.1\\<(target_arch)\\node.lib',
+  gyp info spawn args   '-Dmodule_root_dir=C:\\Users\\sultan\\Desktop\\sda\\ico-contract\\node_modules\\sha3',
+  gyp info spawn args   '-Dnode_engine=v8',
+  gyp info spawn args   '--depth=.',
+  gyp info spawn args   '--no-parallel',
+  gyp info spawn args   '--generator-output',
+  gyp info spawn args   'C:\\Users\\sultan\\Desktop\\sda\\ico-contract\\node_modules\\sha3\\build',
+  gyp info spawn args   '-Goutput_dir=.' ]
+  gyp info spawn C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe
+  gyp info spawn args [ 'build/binding.sln',
+  gyp info spawn args   '/clp:Verbosity=minimal',
+  gyp info spawn args   '/nologo',
+  gyp info spawn args   '/p:Configuration=Release;Platform=x64' ]
+  Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+  C:\Users\sultan\Desktop\sda\ico-contract\node_modules\sha3\build\sha3.vcxproj(20,3): error MSB4019: The imported project "C:\Microsoft.Cpp.Default.props" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
+  gyp ERR! build error 
+  gyp ERR! stack Error: `C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe` failed with exit code: 1
+  gyp ERR! stack     at ChildProcess.onExit (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\build.js:258:23)
+  gyp ERR! stack     at emitTwo (events.js:126:13)
+  gyp ERR! stack     at ChildProcess.emit (events.js:214:7)
+  gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
+  gyp ERR! System Windows_NT 6.2.9200
+  gyp ERR! command "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\bin\\node-gyp.js" "rebuild"
+  gyp ERR! cwd C:\Users\sultan\Desktop\sda\ico-contract\node_modules\sha3
+  gyp ERR! node -v v8.11.1
+  gyp ERR! node-gyp -v v3.6.2
+  gyp ERR! not ok
+      at ProcessTermError.MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
+      at new ProcessTermError (C:\Program Files (x86)\Yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:30281:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
