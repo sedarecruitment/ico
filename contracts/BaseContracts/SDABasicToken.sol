@@ -16,16 +16,16 @@ contract SDABasicToken is ERC827Token, Claimable {
         return false;
     }
 
-    function transfer(address _to, uint256 _value) public returns (bool) {
+    function transfer(address _to, uint256 _value, bytes _data) public returns (bool) {
         require(_to != address(this)); // Prevent transfer to contract itself
-        bool ok = super.transfer(_to, _value);
+        bool ok = super.transfer(_to, _value, _data);
         addHolder(_to);
         return ok;
     }
 
-    function transferFrom(address _from, address _to, uint256 _value) public returns (bool) {
+    function transferFrom(address _from, address _to, uint256 _value, bytes _data) public returns (bool) {
         require(_to != address(this)); // Prevent transfer to contract itself
-        bool ok = super.transferFrom(_from, _to, _value);
+        bool ok = super.transferFrom(_from, _to, _value, _data);
         addHolder(_to);
         return ok;
     }
