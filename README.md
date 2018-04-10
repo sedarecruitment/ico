@@ -1,4 +1,4 @@
-# Accredix PRE ICO Smart Contract
+# SEDA PRE ICO Smart Contract
 
 ## ToDo
 ___
@@ -78,5 +78,5 @@ ___
 2. Go to your ethereum-bridge directory and execute following command
     * ```node bridge -H localhost:your-rpc-port -a account_index```
     * eg, your-rpc-port - 9003, account_index - 0
-    
+
 3. **If and Only if needed**, Update your OAR in your oraclize contract's construct, [how-to](https://github.com/oraclize/ethereum-bridge)
